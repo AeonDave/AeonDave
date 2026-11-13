@@ -6,25 +6,17 @@
 
 <br>
 
-```
-▓▒░ 0x00 // BOOT LOG ░▒▓
-```
-
+<img src="./assets/header-boot.svg" width="100%"/>
 <img src="./assets/boot.svg" width="100%"/>
 
 <br>
 
-```
-▓▒░ 0x01 // ARSENAL ░▒▓
-```
-
+<img src="./assets/header-arsenal.svg" width="100%"/>
 <img src="./assets/kit.svg" width="100%"/>
 
 <br>
 
-```
-▓▒░ 0x02 // TRANSMISSIONS (featured ops) ░▒▓
-```
+<img src="./assets/header-ops.svg" width="100%"/>
 
 <table>
 <tr>
@@ -59,9 +51,7 @@ Offensive AI skill collection for agents — the full attack chain, from recon t
 
 <br>
 
-```
-▓▒░ 0x03 // LIVE SIGNAL ░▒▓
-```
+<img src="./assets/header-signal.svg" width="100%"/>
 
 <div align="center">
 <img height="150" src="https://github-readme-stats.vercel.app/api?username=AeonDave&amp;show_icons=true&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=f0a84d&amp;text_color=e8e2d8&amp;icon_color=67e8f9" alt="stats"/>
@@ -71,7 +61,7 @@ Offensive AI skill collection for agents — the full attack chain, from recon t
 <br>
 
 <details>
-<summary>▓▒░ decrypt for classified transmission ░▒▓</summary>
+<summary><code>▸ [ DECRYPT ] classified transmission ·· click to resolve</code></summary>
 <br>
 
 ```
