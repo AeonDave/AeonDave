@@ -1,0 +1,32 @@
+<svg width="100%" viewBox="0 0 800 190" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#050608"/>
+    <stop offset="100%" stop-color="#08090D"/>
+  </linearGradient>
+  <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#F0A84D" stop-opacity="0"/>
+    <stop offset="25%"  stop-color="#F0A84D" stop-opacity="0.45"/>
+    <stop offset="75%"  stop-color="#67E8F9" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#67E8F9" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+  <rect width="800" height="190" rx="8" fill="url(#bg)"/>
+  <rect width="800" height="1"   y="0"   fill="url(#border)"/>
+  <rect width="800" height="1"   y="189" fill="url(#border)" opacity="0.3"/>
+
+  <g font-family="'Courier New',Courier,monospace" font-size="12">
+
+  <text x="28" y="34"><tspan fill="#FFC46F">OFFENSIVE</tspan><tspan fill="#494640">  ·  </tspan><tspan fill="#827B70">adaptixc2 templates · go-donut loader · omamori protection · obfuscation</tspan></text>
+  <text x="28" y="62"><tspan fill="#F0A84D">OSINT/RE </tspan><tspan fill="#494640">  ·  </tspan><tspan fill="#827B70">doork passive audit · tilt ip recon · binary analysis</tspan></text>
+  <text x="28" y="90"><tspan fill="#67E8F9">AI/AGENTS</tspan><tspan fill="#494640">  ·  </tspan><tspan fill="#827B70">malskill · pi-persona orchestration · pi-subagents · mcp tooling</tspan></text>
+  <text x="28" y="118"><tspan fill="#9DBB89">CRAFT    </tspan><tspan fill="#494640">  ·  </tspan><tspan fill="#827B70">go · python · typescript · c/c++ · shell</tspan></text>
+  <text x="28" y="146"><tspan fill="#B8B0A4">NET      </tspan><tspan fill="#494640">  ·  </tspan><tspan fill="#827B70">go-s5 · fluxify multipath tunnels · mp-quic · proxy tooling</tspan></text>
+
+  <text x="28" y="174" font-size="10" fill="#494640" letter-spacing="2">// capabilities indexed by the gh-node · push only</text>
+
+  </g>
+
+  <path d="M 14 26 L 14 14 L 26 14" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M 786 164 L 786 176 L 774 176" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.7"/>
+</svg>

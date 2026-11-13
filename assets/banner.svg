@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 800 130" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#050608"/>
+    <stop offset="100%" stop-color="#08090D"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.045"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#F0A84D" stop-opacity="0"/>
+    <stop offset="25%"  stop-color="#F0A84D" stop-opacity="0.45"/>
+    <stop offset="75%"  stop-color="#67E8F9" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#67E8F9" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="title-grad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#8D5724"/>
+    <stop offset="28%"  stop-color="#F0A84D"/>
+    <stop offset="55%"  stop-color="#FFC46F"/>
+    <stop offset="100%" stop-color="#F0A84D"/>
+  </linearGradient>
+</defs>
+  <rect width="800" height="130" rx="8" fill="url(#bg)"/>
+  <rect width="800" height="130" rx="8" fill="url(#sheen)"/>
+  <rect width="800" height="1"   y="0"   fill="url(#border)"/>
+  <rect width="800" height="1"   y="129" fill="url(#border)" opacity="0.3"/>
+
+  <!-- scanlines -->
+  <g opacity="0.05">
+    <rect width="800" height="1" y="12" fill="#000"/>
+    <rect width="800" height="1" y="24" fill="#000"/>
+    <rect width="800" height="1" y="36" fill="#000"/>
+    <rect width="800" height="1" y="48" fill="#000"/>
+    <rect width="800" height="1" y="60" fill="#000"/>
+    <rect width="800" height="1" y="72" fill="#000"/>
+    <rect width="800" height="1" y="84" fill="#000"/>
+    <rect width="800" height="1" y="96" fill="#000"/>
+    <rect width="800" height="1" y="108" fill="#000"/>
+    <rect width="800" height="1" y="120" fill="#000"/>
+  </g>
+
+  <text x="24" y="30" font-family="'Courier New',Courier,monospace" font-size="12" letter-spacing="3"
+        fill="#8D5724" opacity="0.9">[ IDENTITY // GITHUB NODE ]</text>
+
+  <text x="400" y="84" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace" font-size="52" font-weight="bold"
+        fill="url(#title-grad)" filter="url(#glow)">AeonDave</text>
+
+  <text x="400" y="112" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace" font-size="12" letter-spacing="2"
+        fill="#F0A84D" opacity="0.55">malware dev · researcher · ai researcher · reverser</text>
+
+  <!-- corner brackets -->
+  <path d="M 14 26 L 14 14 L 26 14" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M 786 104 L 786 116 L 774 116" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.7"/>
+</svg>
