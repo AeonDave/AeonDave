@@ -53,7 +53,7 @@
 
   <text x="400" y="112" text-anchor="middle"
         font-family="'Courier New',Courier,monospace" font-size="12" letter-spacing="2"
-        fill="#F0A84D" opacity="0.55">malware dev · researcher · ai researcher · reverser</text>
+        fill="#F0A84D" opacity="0.55">malware · researcher · offsec · reverser</text>
 
   <!-- corner brackets -->
   <path d="M 14 26 L 14 14 L 26 14" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.7"/>
