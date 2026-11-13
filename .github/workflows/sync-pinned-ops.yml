@@ -1,0 +1,76 @@
+name: sync-pinned-ops
+
+on:
+  schedule:
+    - cron: "17 4 * * 1" # weekly, mondays
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull pinned repos and rewrite README section
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api graphql -f query='
+            query($login: String!) {
+              user(login: $login) {
+                pinnedItems(first: 6, types: REPOSITORY) {
+                  nodes { ... on Repository {
+                    name description url
+                    primaryLanguage { name }
+                  } }
+                }
+              }
+            }' -f login="${{ github.repository_owner }}" > pins.json
+
+          python3 - <<'PY'
+          import json, pathlib
+
+          pins = json.load(open("pins.json"))["data"]["user"]["pinnedItems"]["nodes"]
+          cells = []
+          for r in pins:
+              name = r["name"]
+              url = r["url"]
+              desc = (r.get("description") or "—").strip()
+              lang = (r.get("primaryLanguage") or {}).get("name") or ""
+              tag = f" · {lang}" if lang else ""
+              cells.append(
+                  '<td width="50%" valign="top">\n\n'
+                  f'**[{name}]({url})**{tag}\n'
+                  f'{desc}\n\n'
+                  '</td>'
+              )
+          rows = []
+          for i in range(0, len(cells), 2):
+              rows.append("<tr>\n" + "\n".join(cells[i:i + 2]) + "\n</tr>")
+          table = "<table>\n" + "\n".join(rows) + "\n</table>" if rows else "<p><em>no pins set</em></p>"
+
+          p = pathlib.Path("README.md")
+          readme = p.read_text(encoding="utf-8")
+          s = "<!--START_SECTION:pinned-->"
+          e = "<!--END_SECTION:pinned-->"
+          if s not in readme or e not in readme:
+              raise SystemExit("markers missing in README.md")
+          head = readme[: readme.index(s) + len(s)]
+          tail = readme[readme.index(e):]
+          p.write_text(head + "\n" + table + "\n" + tail, encoding="utf-8")
+          PY
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "no changes"
+          else
+            git config user.name "pinned-sync-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "sync: pinned ops refreshed"
+            git push
+          fi

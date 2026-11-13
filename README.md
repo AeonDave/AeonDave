@@ -18,36 +18,38 @@
 
 <img src="./assets/header-ops.svg" width="100%"/>
 
+<!--START_SECTION:pinned-->
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**[doork](https://github.com/AeonDave/doork)**
-Passive Vulnerability Auditor — recon-first web auditing without touching the target.
+**[go-s5](https://github.com/AeonDave/go-s5)** · Go
+A minimal, fast, and extensible SOCKS5 lib written in Go.
 
 </td>
 <td width="50%" valign="top">
 
-**[tilt](https://github.com/AeonDave/tilt)**
-Terminal Ip Lookup Tool — fast IP intelligence straight from the shell.
+**[malskill](https://github.com/AeonDave/malskill)** · Python
+Offensive oriented Skill for agentic AI
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[AdaptixC2-Template-Generators](https://github.com/AeonDave/AdaptixC2-Template-Generators)**
-Implant and listener template generators for the AdaptixC2 framework.
+**[pi-persona](https://github.com/AeonDave/pi-persona)** · TypeScript
+Supervised multi-agent orchestration for Pi
 
 </td>
 <td width="50%" valign="top">
 
-**[malskill](https://github.com/AeonDave/malskill)**
-Offensive AI skill collection for agents — the full attack chain, from recon to C2 dev.
+**[pi-persona-mind](https://github.com/AeonDave/pi-persona-mind)** · TypeScript
+—
 
 </td>
 </tr>
 </table>
+<!--END_SECTION:pinned-->
 
 <br>
 

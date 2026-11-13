@@ -21,10 +21,10 @@
 
   <g font-family="'Courier New',Courier,monospace">
     <text x="24" y="28" font-size="13" letter-spacing="1" fill="#8D5724">[ 0x02 ]</text>
-    <text x="108" y="28" font-size="15" font-weight="bold" letter-spacing="3" fill="#FFC46F" filter="url(#glow)">FEATURED OPS</text>
-    <line x1="290" y1="23" x2="560" y2="23" stroke="#8D5724" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <text x="108" y="28" font-size="15" font-weight="bold" letter-spacing="3" fill="#FFC46F" filter="url(#glow)">PINNED OPS</text>
+    <line x1="245" y1="23" x2="560" y2="23" stroke="#8D5724" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
     <path d="M 566 19 L 574 23 L 566 27" stroke="#8D5724" stroke-width="1.5" fill="none" opacity="0.8"/>
-    <text x="776" y="27" font-size="10" letter-spacing="2" fill="#67E8F9" opacity="0.75" text-anchor="end">SELECTED</text>
+    <text x="776" y="27" font-size="10" letter-spacing="2" fill="#67E8F9" opacity="0.75" text-anchor="end">AUTO-SYNC</text>
   </g>
 
   <text x="762" y="13" font-size="7" fill="#494640">0x4C</text>
